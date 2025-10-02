@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Investigación — Plantilla HTML</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <h1>Plantilla de Investigación</h1>
+      <p class="lead">Estructura y demo con código listo para subir a GitHub.</p>
+      <nav class="nav">
+        <a href="#objetivo">Objetivo</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#demo">Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="objetivo" class="card">
+      <h2>Objetivo</h2>
+      <p>Describe aquí el objetivo de tu investigación. Por ejemplo:</p>
+      <textarea id="objetivo-text" placeholder="Escribe el objetivo principal...">Analizar el comportamiento de X bajo condiciones Y y presentar hallazgos reproducibles.</textarea>
+      <div class="actions">
+        <button id="save-objective">Guardar objetivo (local)</button>
+        <button id="export-md">Exportar sección a Markdown</button>
+      </div>
+    </section>
+
+    <section id="metodologia" class="card">
+      <h2>Metodología</h2>
+      <ol>
+        <li>Recopilación de datos</li>
+        <li>Preprocesamiento</li>
+        <li>Análisis y visualización</li>
+        <li>Conclusiones</li>
+      </ol>
+      <p>Puedes editar esta lista para describir pasos concretos de tu investigación.</p>
+    </section>
+
+    <section id="resultados" class="card">
+      <h2>Resultados (ejemplo)</h2>
+      <p>Tabla de datos de muestra y un gráfico generado en canvas. Reemplaza con tus datos reales.</p>
+      <div class="table-controls">
+        <button id="add-row">Agregar fila de ejemplo</button>
+        <button id="download-csv">Descargar CSV</button>
+      </div>
+      <table id="data-table">
+        <thead>
+          <tr><th>Índice</th><th>Nombre</th><th>Valor</th><th>Acción</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <canvas id="chart" width="600" height="240" aria-label="Gráfico de valores"></canvas>
+    </section>
+
+    <section id="demo" class="card">
+      <h2>Demo interactiva</h2>
+      <p>Prueba las acciones: agrega filas, guarda objetivo y exporta secciones.</p>
+      <div class="small">Consejo: abre la consola del navegador para ver logs de depuración.</div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container"> 
+      <small>Plantilla generada automáticamente — modifícala según tu investigación.</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
